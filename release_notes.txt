@@ -1,20 +1,22 @@
-VideoPlayer
-===========
+Custom QML Video Player
+=======================
 
-The Video Player Component provides a customised video player, that can be
-used within a QML application. It showcases custom overlay controls on top
-of a video content. The controls are easily modifiable with QML code.
+The Custom QML Video Player provides a reusable QML component for playing
+video and showing transparent overlay controls on top of video content.
+The VideoPlayer component enables showing full-screen videos with play
+controls that can be hidden or in a smaller size with play controls and other
+information always shown. The controls can be easily modified with QML code.
 
-The Video Player is using pretty much custom QML code, but it does use the 
-Qt Quick Components (such as Button, ProgressBar, BusyIndicator) in few places.
-For example, the ProgressBar is used to indicate the user the current playback
-position with a platform familiar way.
+The VideoPlayer has been created mostly with custom QML code, but it does use
+the Qt Quick Components (such as Button, ProgressBar, BusyIndicator) in a few
+places. For example, the ProgressBar is used to indicate the current playback
+position in a way that is familiar to the user.
 
 This example component demonstrates:
 - QML video playing capabilities
-- Customised overlay controls on top of a Video content
-- Handling volume keys of a Symbian phone within the QML code
-- Reacting to phone's current profile changes
+- Customised overlay controls on top of video content
+- Handling Symbian phone volume keys within the QML code
+- Reacting to the phone's current profile changes
 
 This example component is hosted in Nokia Developer Projects:
 - http://projects.developer.nokia.com/videoplayer
@@ -26,15 +28,15 @@ For more information on the implementation, visit the wiki page:
 1. Usage
 -------------------------------------------------------------------------------
 
-The customised QML VideoPlayer component can be taken into use in 3rd party
-applications simply by adding the VideoPlayer QML sources into the project and
-importing it into a QML file. The player itself can be created simply by
-instantiating the VideoPlayView and by calling its setVideoData() function.
+The customised QML VideoPlayer component can be used in applications simply by
+adding the VideoPlayer QML sources into the project and importing it into
+a QML file. The player itself can be created by instantiating the VideoPlayView
+and by calling its setVideoData() function.
 
 If the hardware volume keys are required, the volumekeys.h has to be included
-in a .cpp file (e.g. the using application's main.cpp) and the VolumeKeys class
+in a .cpp file (e.g., the application's main.cpp) and the VolumeKeys class
 should be instantiated and passed to the declarative context by calling the
-QDeclarativeContext::setContextProperty. By default, the volume keys context 
+QDeclarativeContext::setContextProperty. By default, the volume keys' context 
 property is assumed to be named as "volumeKeys".
 
 
@@ -129,9 +131,9 @@ None; The application can be self signed on Symbian.
 4.2 Known issues and design limitations
 ---------------------------------------
 
-- If using the Custom VideoPlayer Component for streaming videos over the web,
-the streaming might not start on some device & operator combinations. This
-might be due to the used video streaming access point. Changing it can help.
+- If you use the Custom VideoPlayer Component for streaming videos over the
+internet, streaming might not start on some device & operator combinations.
+This might be due to the used video streaming access point. Changing it may help.
 In Symbian devices, select
 "Menu" - "Settings" - "Application settings" - "Videos" - "Access point in use"
 to change the currently used streaming access point.
