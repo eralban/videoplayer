@@ -197,7 +197,7 @@ application menu and launch the application by tapping the icon.
 
 See the licence text file delivered with this project. The licence file is also
 available online at
-https://projects.developer.nokia.com/videoplayer/browser/Licence.txt
+https://github.com/nokia-developer/videoplayer/blob/master/Licence.txt
 
 
 7. Related documentation
