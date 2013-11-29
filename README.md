@@ -18,11 +18,6 @@ This example component demonstrates:
 - Handling Symbian phone volume keys within the QML code
 - Reacting to the phone's current profile changes
 
-This example component is hosted in Nokia Developer Projects:
-- http://projects.developer.nokia.com/videoplayer
-
-For more information on the implementation, visit the wiki page:
-- http://projects.developer.nokia.com/videoplayer/wiki
 
 
 1. Usage
@@ -54,17 +49,17 @@ property is assumed to be named as "volumeKeys".
 3.1 Folders
 -----------
 
- |                   The root folder contains the licence information and
- |                   this file (release notes).
- |
- |- meego            
- |  |
- |  |- VideoPlayer   MeeGo platform-specific code files.
- |
- |- symbian          
- |  |
- |  |- VideoPlayer   Symbian (Anna/Belle) platform-specific code files.
- |
+ <br>|                   The root folder contains the licence information and
+ <br>|                   this file (release notes).
+ <br>|
+ <br>|- meego            
+ <br>|  |
+ <br>|  |- VideoPlayer   MeeGo platform-specific code files.
+ <br>|
+ <br>|- symbian          
+ <br>|  |
+ <br>|  |- VideoPlayer   Symbian (Anna/Belle) platform-specific code files.
+ <br>|
 
 
 3.2 Important files and classes
